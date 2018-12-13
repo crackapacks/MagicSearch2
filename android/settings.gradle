@@ -1,0 +1,3 @@
+rootProject.name = 'MagicSearch2'
+
+include ':app'
