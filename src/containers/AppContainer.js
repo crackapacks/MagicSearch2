@@ -1,11 +1,11 @@
 import { createAppContainer,  createStackNavigator } from 'react-navigation';
 // you can also import from @react-navigation/native
-import AuthScreen from '../screens/AuthScreen';
-import WelcomeScreen from '../screens/WelcomeScreen';
+import LogIn from '../screens/LogIn';
+import SignUp from '../screens/SignUp';
 
 const AppNavigator = createStackNavigator({ 
-    welcome: { screen: WelcomeScreen},
-    auth: { screen: AuthScreen }
+     login: { screen: LogIn},
+    signup: { screen: SignUp}
   });
 
 const AppContainer = createAppContainer(AppNavigator);

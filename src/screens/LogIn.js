@@ -3,19 +3,19 @@ import React, { Component } from 'react';
 // import { AppLoading } from 'expo';
 import { View, Text, Button, AsyncStorage } from 'react-native';
 
-class WelcomeScreen extends Component {
+class Login extends Component {
     static navigationOptions = {
-        title: 'Welcome',
+        title: 'LogIn',
       };
       render() {
         const {navigate} = this.props.navigation;
         return (
           <Button
-            title="Go to AuthScreen"
-            onPress={() => navigate('auth')}
+            title="Go to SignUp"
+            onPress={() => navigate('signup')}
           />
         );
       }
     }
 
-export default WelcomeScreen;
+export default Login;
