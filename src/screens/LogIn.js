@@ -27,7 +27,8 @@ export default class Login extends React.Component {
   state = { email: '', password: '', errorMessage: null }
   handleLogin = () => {
     // TODO: Firebase stuff...
-    console.log('handleLogin')
+    console.log('email', this.state.email);
+    console.log('password', this.state.password);
   }
   render() {
     return (
@@ -55,7 +56,7 @@ export default class Login extends React.Component {
         <Button title="Login" onPress={this.handleLogin} />
         <Button
           title="Don't have an account? Sign Up"
-          onPress={() => this.props.navigation.navigate('SignUp')}
+          onPress={() => this.props.navigation.navigate('signup')}
         />
       </View>
     )
@@ -65,7 +66,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: 'orange'
   },
   textInput: {
     height: 40,
